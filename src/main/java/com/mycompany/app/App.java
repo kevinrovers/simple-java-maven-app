@@ -14,4 +14,7 @@ public class App {
         return message;
     }
 
+    public String getGreeting(String fullName) {
+        return "Hello " + fullName + "!";
+    }
 }

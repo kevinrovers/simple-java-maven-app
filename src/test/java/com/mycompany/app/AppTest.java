@@ -29,6 +29,12 @@ public class AppTest {
         Assertions.assertThat(outContent.toString()).as("Message is incorrect").contains("Hello World!");
     }
 
+    @Test
+    public void testAppGreeting() {
+        App app = new App();
+        Assertions.assertThat(app.getGreeting("Jack Sparrow")).as("Geeting is incorrect").isEqualTo("Hello Jack Sparrow!");
+    }
+
     @After
     public void cleanUpStreams() {
         System.setOut(null);
