@@ -64,6 +64,7 @@
           <version>${sonar-maven-plugin.version}</version>
           <executions>
             <execution>
+              <phase>verify</phase>
               <goals>
                 <goal>sonar</goal>
               </goals>
