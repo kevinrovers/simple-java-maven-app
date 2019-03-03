@@ -18,7 +18,7 @@ pipeline {
         }
         stage('QA') {
             steps {
-                sh "mvn -P sonar verify -Dsonar.host.url=${env.SONARQUBE_HOST_URL} -Dsonar.login=${env.SONARQUBE_LOGIN}"
+                sh "mvn -P sonar verify -DskipTests -Dsonar.host.url=${env.SONARQUBE_HOST_URL} -Dsonar.login=${env.SONARQUBE_LOGIN}"
             }
         }
         stage('Deliver') {
