@@ -11,7 +11,7 @@
   <properties>
     <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-    <sonar.jacoco.reportPath>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPath>
+    <sonar.jacoco.reportPaths>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPaths>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar-maven-plugin.version>3.5.0.1254</sonar-maven-plugin.version>
